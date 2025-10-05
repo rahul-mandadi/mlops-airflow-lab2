@@ -1,6 +1,6 @@
 # MLOps Lab 2: Multi-Model Pipeline with Apache Airflow
 
-**Course**: DADS 7305 - MLOps, Northeastern University  
+**Course**: IE7374 - MLOps, Northeastern University  
 **Author**: Rahul Reddy Mandadi
 
 ## Overview
