@@ -1,0 +1,38 @@
+{"timestamp":"2025-10-05T13:34:37.988539Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-05T13:34:37.989074Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/my_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-05T13:34:38.731679Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/my_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-10-05T13:34:38.731768Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/src/success_email.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2025-10-05T13:34:38.788660Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.788796Z","level":"info","event":"=== Dataset Summary ===","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.788858Z","level":"info","event":"Total Samples: 1000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.788909Z","level":"info","event":"Features: ['Daily Time Spent on Site', 'Age', 'Area Income', 'Daily Internet Usage', 'Ad Topic Line', 'City', 'Male', 'Country', 'Timestamp', 'Clicked on Ad']","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.788966Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.789014Z","level":"info","event":"Target Distribution:","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.789118Z","level":"info","event":"Clicked on Ad","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.789163Z","level":"info","event":"0    500","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.789207Z","level":"info","event":"1    500","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.789267Z","level":"info","event":"Name: count, dtype: int64","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.789344Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.789395Z","level":"info","event":"Age Statistics:","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.789980Z","level":"info","event":"count    1000.000000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790041Z","level":"info","event":"mean       36.009000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790093Z","level":"info","event":"std         8.785562","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790145Z","level":"info","event":"min        19.000000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790190Z","level":"info","event":"25%        29.000000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790234Z","level":"info","event":"50%        35.000000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790279Z","level":"info","event":"75%        42.000000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790324Z","level":"info","event":"max        61.000000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790369Z","level":"info","event":"Name: Age, dtype: float64","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790413Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790463Z","level":"info","event":"Income Statistics:","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790564Z","level":"info","event":"count     1000.000000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790607Z","level":"info","event":"mean     55000.000080","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790650Z","level":"info","event":"std      13414.634022","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790690Z","level":"info","event":"min      13996.500000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790767Z","level":"info","event":"25%      47031.802500","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790812Z","level":"info","event":"50%      57012.300000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790858Z","level":"info","event":"75%      65470.635000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790903Z","level":"info","event":"max      79484.800000","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790944Z","level":"info","event":"Name: Area Income, dtype: float64","logger":"task.stdout"}
+{"timestamp":"2025-10-05T13:34:38.790818Z","level":"info","event":"Done. Returned value was: True","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-05T13:34:38.790924Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('0199b494-c90c-745c-b2da-887d4c34d720'), task_id='data_summary_task', dag_id='ad_click_prediction_mlops', run_id='manual__2025-10-05T13:34:33.722069+00:00', try_number=1, dag_version_id=UUID('0199b490-b0c8-7864-a9ef-d2095b31fa29'), map_index=-1, hostname='f8c73f7fc1f3', context_carrier={}, task=<Task(PythonOperator): data_summary_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 10, 5, 13, 34, 37, 894269, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

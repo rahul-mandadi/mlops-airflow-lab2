@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Airflow
+airflow/
+*.db
+*.pid
+
+# Docker volumes
+logs/
+plugins/
+config/
+
+# ML Models
+dags/model/*.sav
+dags/model/*.pkl
+
+# Environment
+.env
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
